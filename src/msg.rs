@@ -1,3 +1,5 @@
+//Here, we need to define the various messages we can send to the contract.
+
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 

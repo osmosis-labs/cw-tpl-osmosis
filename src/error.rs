@@ -1,3 +1,5 @@
+//Defining the errors from contract.
+
 use cosmwasm_std::StdError;
 use thiserror::Error;
 
