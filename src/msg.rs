@@ -13,6 +13,23 @@ pub struct InstantiateMsg {
 pub enum ExecuteMsg {
     Increment {},
     Reset { count: i32 },
+    CreateDenom {
+        subdenom: String,
+    },
+    ChangeAdmin {
+        denom: String,
+        new_admin_address: String,
+    },
+    MintTokens {
+        denom: String,
+        amount: Uint128,
+        mint_to_address: String,
+    },
+    BurnTokens {
+        denom: String,
+        amount: Uint128,
+        burn_from_address: String,
+    },
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
@@ -20,10 +37,15 @@ pub enum ExecuteMsg {
 pub enum QueryMsg {
     // GetCount returns the current count as a json-encoded number
     GetCount {},
+    GetDenom {
+        creator_address: String,
+        subdenom: String,
+    },
 }
 
 // We define a custom struct for each query response
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct CountResponse {
     pub count: i32,
+    pub denom: String,
 }
