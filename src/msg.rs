@@ -15,6 +15,7 @@ pub struct InstantiateMsg {
 pub enum ExecuteMsg {
     Increment {},
     Reset { count: i32 },
+    /* 
     CreateDenom {
         subdenom: String,
     },
@@ -32,6 +33,7 @@ pub enum ExecuteMsg {
         amount: Uint128,
         burn_from_address: String,
     },
+    */
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
@@ -39,14 +41,17 @@ pub enum ExecuteMsg {
 pub enum QueryMsg {
     // GetCount returns the current count as a json-encoded number
     GetCount {},
+    /*
     GetDenom {
         creator_address: String,
         subdenom: String,
     },
+    */
 }
 
 // We define a custom struct for each query response
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct CountResponse {
     pub count: i32,
+    // Plant this bug to show interaction between msg.rs and contract.rs pub denom: String,
 }

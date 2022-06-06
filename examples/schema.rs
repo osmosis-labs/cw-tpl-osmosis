@@ -3,8 +3,8 @@ use std::fs::create_dir_all;
 
 use cosmwasm_schema::{export_schema, remove_schemas, schema_for};
 
-use osmo::msg::{CountResponse, ExecuteMsg, InstantiateMsg, QueryMsg};
-use osmo::state::State;
+use helloworld::msg::{CountResponse, ExecuteMsg, InstantiateMsg, QueryMsg};
+use helloworld::state::State;
 
 fn main() {
     let mut out_dir = current_dir().unwrap();
@@ -17,4 +17,5 @@ fn main() {
     export_schema(&schema_for!(QueryMsg), &out_dir);
     export_schema(&schema_for!(State), &out_dir);
     export_schema(&schema_for!(CountResponse), &out_dir);
+    // export_schema(&schema_for!(GetDenomResponse), &out_dir);
 }

@@ -250,10 +250,10 @@ mod tests {
         coins, from_binary, Attribute, ContractResult, CosmosMsg, OwnedDeps, Querier, StdError,
         SystemError, SystemResult,
     };
-    use osmo_bindings::OsmosisQuery;
-    use osmo_bindings_test::OsmosisApp;
+    // use osmo_bindings::OsmosisQuery;
+    // use osmo_bindings_test::OsmosisApp;
     use std::marker::PhantomData;
-
+/* 
     fn mock_dependencies_with_custom_quierier<Q: Querier>(
         querier: Q,
     ) -> OwnedDeps<MockStorage, MockApi, Q, OsmosisQuery> {
@@ -301,7 +301,7 @@ mod tests {
 
     //const DENOM_NAME: &str = "mydenom";
     //const DENOM_PREFIX: &str = "factory";
-
+*/
     #[test]
     fn proper_initialization() {
         let mut deps = mock_dependencies_with_balance(&coins(2, "token"));
