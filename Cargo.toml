@@ -1,7 +1,7 @@
 [package]
-name = "cw-tpl-osmosis"
+name = "helloworld"
 version = "0.1.0"
-authors = ["Daniel Farina <dan@osmosis.team>"]
+authors = ["Daniel Farina <dan@osmosis.team>, Xiangan He <xiangan@osmosis.team"]
 edition = "2018"
 
 exclude = [
