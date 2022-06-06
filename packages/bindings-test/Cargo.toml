@@ -1,0 +1,20 @@
+[package]
+name = "osmo-bindings-test"
+version = "0.6.0"
+authors = ["Ethan Frey <ethanfrey@users.noreply.github.com>"]
+edition = "2018"
+description = "Multitest (and other test helpers) support for Osmosis-specific contracts"
+repository = "https://github.com/confio/osmosis-bindings"
+homepage = "https://osmosis.zone"
+license = "Apache-2.0"
+
+[dependencies]
+itertools = "0.10"
+osmo-bindings = { version = "0.6.0", path = "../bindings" }
+cosmwasm-std = "1.0.0-beta8"
+schemars = "0.8"
+serde = { version = "1.0.103", default-features = false, features = ["derive"] }
+cw-multi-test = "0.13.2"
+cw-storage-plus = "0.13.2"
+anyhow = "1"
+thiserror = "1.0.21"
