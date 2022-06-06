@@ -377,6 +377,8 @@ dependencies = [
  "cw-multi-test",
  "cw-storage-plus",
  "cw2",
+ "osmo-bindings",
+ "osmo-bindings-test",
  "schemars",
  "serde",
  "thiserror",
@@ -437,6 +439,30 @@ name = "opaque-debug"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "624a8340c38c1b80fd549087862da4ba43e08858af025b236e509b6649fc13d5"
+
+[[package]]
+name = "osmo-bindings"
+version = "0.6.0"
+dependencies = [
+ "cosmwasm-std",
+ "schemars",
+ "serde",
+]
+
+[[package]]
+name = "osmo-bindings-test"
+version = "0.6.0"
+dependencies = [
+ "anyhow",
+ "cosmwasm-std",
+ "cw-multi-test",
+ "cw-storage-plus",
+ "itertools",
+ "osmo-bindings",
+ "schemars",
+ "serde",
+ "thiserror",
+]
 
 [[package]]
 name = "pkcs8"
