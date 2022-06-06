@@ -5,11 +5,23 @@
     {
       "type": "object",
       "required": [
-        "get_count"
+        "get_denom"
       ],
       "properties": {
-        "get_count": {
-          "type": "object"
+        "get_denom": {
+          "type": "object",
+          "required": [
+            "creator_address",
+            "subdenom"
+          ],
+          "properties": {
+            "creator_address": {
+              "type": "string"
+            },
+            "subdenom": {
+              "type": "string"
+            }
+          }
         }
       },
       "additionalProperties": false

@@ -1,3 +1,4 @@
+/*
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
@@ -44,3 +45,4 @@ impl CwTemplateContract {
         Ok(res)
     }
 }
+*/
