@@ -1,1 +1,1 @@
-918e267501d9c362ec6bb556643fd36af43c1237dc9f86ff11d4210908e04932  ./target/wasm32-unknown-unknown/release/cw_tpl_osmosis.wasm
+df381c2ff94e0fad3dbfcbb269384f7c4cf9f348ea87c2b9d0374069af69cede  ./target/wasm32-unknown-unknown/release/helloworld.wasm
