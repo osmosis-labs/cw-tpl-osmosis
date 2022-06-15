@@ -6,7 +6,7 @@ import {
   useWallet,
   useConnectedWallet,
   WalletStatus,
-} from '@terra-money/wallet-provider'
+} from '@keplr-wallet/provider'
 
 import * as execute from './contract/execute'
 import * as query from './contract/query'
